@@ -1,0 +1,30 @@
+.contain{
+ margin: 60px auto;
+ width:100%;
+
+}
+.jumbo{
+   background-color: black;
+    height: auto;
+}
+.buttons{
+    margin:60px;
+}
+.reactButt{
+    background-image: url('../images/react.png');
+    height: 65px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.nodeButt{
+    background-image: url('../images/node.jpg');
+    height: 65px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.dis{
+   
+    margin:20px;
+}

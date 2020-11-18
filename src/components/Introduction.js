@@ -1,4 +1,4 @@
-import {Jumbotron , Container} from 'react-bootstrap/';
+import  {Container} from 'react-bootstrap/';
 
 const Introduction=()=>{
     return(

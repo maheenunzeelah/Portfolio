@@ -1,9 +1,9 @@
-import '../assets/css/Home.css'
-import img from '../assets/images/homeBack.jpg'
-import Introduction from './Introduction'
-
+import '../assets/css/Home.css';
+import img from '../assets/images/homeBack.jpg';
+import Introduction from './Introduction';
+import ButtonGrp from './ButtonGrp';
 import Image from 'react-bootstrap/Image';
-import Button from 'react-bootstrap/Button'
+
  const Home=()=>{
     return(
         <div className="home">
@@ -11,9 +11,7 @@ import Button from 'react-bootstrap/Button'
          <div className="intro">
          <div className="anim"><Introduction /></div>
          <div className="button">
-         <Button variant="outline-warning" >Skills</Button>{' '}
-         <Button variant="outline-warning">Projects</Button>{'  '}
-         <Button variant="outline-warning">Contact</Button>
+          <ButtonGrp />
          </div>
          </div>
          
