@@ -1,0 +1,39 @@
+
+.homeImage{
+ 
+    background-size: cover;
+    
+    width: 100%;
+    margin:0px;
+    height:650px;
+  }
+  .home{
+    clear: both;
+    width:100%;
+    height: 100%;
+  }
+  @keyframes text{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+ .anim{
+  animation: text 3s linear ;
+ } 
+ .button{
+   margin:130px 20px auto 30px;
+   padding-right: 20px;
+  
+ }
+.intro{
+
+  color:white;
+  position: absolute  ;
+  top:20%;
+  right:20%;
+  z-index:10;
+  font-family: 'Great Vibes', cursive;
+}
