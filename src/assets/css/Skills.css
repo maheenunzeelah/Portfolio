@@ -1,7 +1,9 @@
 .contain{
  margin: 60px auto;
  width:100%;
-
+ background-color:rgb(187, 182, 169);
+ border: 4px solid rgba(14, 9, 1, 0.945);
+ border-radius: 50px 50px;
 }
 .jumbo{
    background-color: black;
@@ -10,19 +12,48 @@
 .buttons{
     margin:60px;
 }
-.reactButt{
-    background-image: url('../images/react.png');
+.buttons a:visited,a:focus,a:active{
+text-decoration: none;
+color: #f0ad4e;
+}
+.butt{
     height: 65px;
     width: 60px;
     background-repeat: no-repeat;
     background-position: center center;
+    border: 1px solid black;
+}
+.reactButt{
+    background-image: url('../images/react.png');
+  
 }
 .nodeButt{
     background-image: url('../images/node.jpg');
-    height: 65px;
-    width: 60px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
+}
+.mongoButt{
+    background-image: url('../images/mongo.png');
+    
+}
+.cssButt{
+    background-image: url('../images/css.png');
+    
+}
+.htButt{
+    background-image: url('../images/html.png');
+    
+}
+.jsButt{
+    background-image: url('../images/jasc.png');
+    
+}
+.sqlButt{
+    background-image: url('../images/sql.png');
+    
+}
+.cButt{
+    background-image: url('../images/c.jpg');
+    
 }
 .dis{
    

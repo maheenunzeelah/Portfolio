@@ -1,46 +1,47 @@
 import { Jumbotron, Container, Image, Row, Col, ProgressBar } from 'react-bootstrap/';
 import '../assets/css/Skills.css';
 import ButtonGrp from './ButtonGrp';
+import SkillButton from './SkillButton';
 import img from '../assets/images/react.png';
+import Navb from './Navbar';
+{/* <button className="reactButt rounded-circle "></button> */ }
 const Skills = () => {
     const reactjs = 90;
-    const nodejs=60
+    const nodejs = 60;
+    const mongodb= 60;
+    const sql = 60;
+    const c=60;
+    const htm=80;
+    const css=80;
+    const js=90;
     return (
         <div >
-            <div className="buttons">
-                <ButtonGrp />
-            </div>
-            <Container className="contain">
-
-
-                <h1 className="text-white mb-5">SKILLS</h1>
-                
-                <Row className="mb-3">
-                <Col sm={5}>
-                   <h5 className="text-warning">React js/ Redux</h5>
-                </Col>
-                <Col >
-                <h5 className="text-warning">Node js</h5>
-                </Col>
-                   
-
-                </Row>
-                <Row className="mb-3">
-                   
-                    <Col xs={1} sm={1}>  <button className="reactButt rounded-circle "></button>
-                    </Col>
-                    <Col md={3} sm={3} xs={3} className="dis">
-                        <ProgressBar now={reactjs} label={`${reactjs}%`} />
-                    </Col>
+           <Navb />
+            <Container className="contain ">
+                <h1 className="text-success m-5">SKILLS</h1>
+                <div className="d-flex flex-wrap justify-content-md-start mb-4">
                     
-                    <Col xs={1} sm={1}>  <button className="nodeButt rounded-circle "></button>
-                    </Col>
-                    <Col md={3} sm={3} xs={3} className="dis">
-                        <ProgressBar now={nodejs} label={`${nodejs}%`} />
-                    </Col>
-                </Row>
-                
-                
+                 <SkillButton name="React JS/Redux" skill={reactjs} buttName="reactButt"/>
+                  
+                 <SkillButton name="NodeJS" skill={nodejs} buttName="nodeButt"/>
+
+                </div>
+                <div className="d-flex flex-wrap justify-content-md-start mb-4">
+                <SkillButton name="MongoDB" skill={mongodb} buttName="mongoButt"/>
+                <SkillButton name="C# / .NET" skill={c} buttName="cButt"/>
+                 
+
+                </div>
+                <div className="d-flex flex-wrap justify-content-md-start mb-4">
+                <SkillButton name="HTML" skill={htm} buttName="htButt"/>
+                <SkillButton name="CSS" skill={css} buttName="cssButt"/>
+                </div>
+                <div className="d-flex flex-wrap justify-content-md-start mb-5">
+                   
+                <SkillButton name="Javascript /ES6" skill={js} buttName="jsButt"/>
+                <SkillButton name="SQL" skill={sql} buttName="sqlButt"/>
+                </div>
+
 
 
             </Container>
